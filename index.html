@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .wrapper{
+            display:grid;
+            grid-template-columns: 350px 350px 350px 350px 350px;
+            grid-gap: 15px; 
+            /* grid-template-rows: 1fr 1fr 1fr 1fr;
+            
+            grid-gap: 15px; */
+       }
+        .container {
+           border:3px solid #000;
+           max-width: 340px;
+           max-height: 340px;
+           line-height: 1;
+           padding: 10px;
+        }
+        .picture {
+            max-width: 300px;
+            max-height:250px;
+        }
+        .heading {
+            margin-block-start: 0em;
+            margin-block-end: -0em;
+        }
+        .heading:hover{
+            background-color: #000;
+            color:#fff;
+        }
+        .address, .date {
+            display: inline-block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+        .price, .favorite {
+            margin-block-start: 0em;
+            margin-block-end: -1em;
+        }
+        .favorite{
+            margin-left: 310px;
+            margin-bottom: 20px;
+            width: 20px;
+            height: auto;
+        }
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="wrapper">
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+    <div class="container">
+        <img class="picture" src="img/product1.jpg" alt="look at this Product"></img>
+                <h4 class="heading">Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s</h4>
+                <h6 class="address">Черкассы</h6> - <h6 class="date">8 нояб.</h6>
+                <h4 class="price">529 грн.</h4>
+                <img class="favorite" src="img/favorite.png" alt="add to favorites"></img>
+    </div>
+</div> -->
+    <!-- <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app")
+        )  -->
+
+<div class="wrapper">
+    <div id="app"></div>
+    <div id="app2"></div>
+    <div id="app3"></div>
+    <div id="app4"></div>
+    <div id="app5"></div>
+
+    <div id="app6"></div>
+    <div id="app7"></div>
+    <div id="app8"></div>
+    <div id="app9"></div>
+    <div id="app10"></div>
+
+    <div id="app11"></div>
+    <div id="app12"></div>
+    <div id="app13"></div>
+    <div id="app14"></div>
+    <div id="app15"></div>
+
+    <div id="app16"></div>
+    <div id="app17"></div>
+    <div id="app18"></div>
+    <div id="app19"></div>
+    <div id="app20"></div>
+</div>  
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script type="text/babel">
+        class ProductMinimize extends React.Component {
+            constructor(props){
+                super(props);
+                this.state = {picture:this.props.picture, heading:this.props.heading, address:this.props.address, date: this.props.date, url:this.props.url,
+                 price:this.props.price, favorite:this.props.favorite};
+
+                // this.press = this.press.bind(this);
+            }
+
+            render(){
+            return <div class="container">
+                <a href={this.props.url}> <img class="picture" src={this.props.picture} alt="look at this Product"></img> </a>
+                <a href={this.props.url}> <h4 class="heading">{this.props.heading}</h4> </a>
+                <h6 class="address">{this.props.address}</h6> - <h6 class="date">{this.props.date}</h6>
+                <h4 class="price">{this.props.price}</h4>
+                <img class="favorite" src={this.props.favorite} alt="add to favorites"></img>
+            </div>
+        }
+        } 
+
+        class ProductGrid extends React.Component {
+            
+        }
+
+        ReactDOM.render(
+            <ProductMinimize picture="img/auto.jpg" heading="Продам авто"
+            address="Сарненский район" date="11 нояб." price="1100$" favorite="img/favorite.png" url="product1.html" />,
+            document.getElementById("app")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app2")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app3")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app4")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app5")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app6")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app7")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app8")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app9")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app10")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app11")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app12")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app13")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app14")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app15")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app16")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app17")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app18")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app19")
+        )
+        ReactDOM.render(
+            <ProductMinimize picture="img/product1.jpg" heading="Сетка и нож BRAUN 32B, 32S,21B Series 3 Блок бритва браун 300s,301s"
+            address="Черкассы" date="8 нояб." price="529 грн." favorite="img/favorite.png"  />,
+            document.getElementById("app20")
+        )
+  
+    </script>
+</body>
+</html>
